@@ -26,21 +26,19 @@ npm install
 cd server
 npm install
 
-
-4. Set up the MySQL database:
-- Create a new database named `crud`.
-- Create two tables:
-  - `login`: for authentication (fields: `ID`, 'Name' `Email`, `Password`)
-  - `students`: for storing student data (fields: `ID`, `Name`, 'Email`, )
-
-5. Configure environment variables:
-- In the `server` directory, create a `.env` file and add the following variables:
+4. Configure environment variables:
+- In the `server` directory, create a `server.js` file and add the following variables:
   ```
   DB_HOST=localhost
   DB_USER=root
   DB_PASSWORD=yourpassword
-  DB_DATABASE=auth_crud_db
-  ```
+  DB_DATABASE=crud
+  
+5. Set up the MySQL database:
+- Create a new database named `crud`.
+- Create two tables:
+  - `login`: for authentication (fields: `ID`, 'Name' `Email`, `Password`)
+  - `students`: for storing student data (fields: `ID`, `Name`, 'Email`, )
 
 ### Running the Application
 
